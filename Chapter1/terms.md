@@ -5,11 +5,11 @@ This document contains a list of keywords that the author has suggested we defin
 
 **Analysis**: This is listed in our book as one of the four stages of program development. When developing a program it is important we analyze the problem we are trying to solve to answer a few questions that will help us determine what direction to move forward in. 
 These questions include: 
-> what's the problem? 
-> What does the user want? 
-> What does the user need? (There is an important distinction between this and the last question)
-> What can the user afford?
-> What kind of reliability do we need? (I am unsure of what reliability is meant in this context; hopefully as I continue to learn more it is made clear)
++ what's the problem? 
++ What does the user want? 
++ What does the user need? (There is an important distinction between this and the last question)
++ What can the user afford?
++ What kind of reliability do we need? (I am unsure of what reliability is meant in this context; hopefully as I continue to learn more it is made clear)
 
 **Blackboard**: Feedback is considered one of the most important steps in the design phase, and one easy way to receive feedback is by writing yourself (or others). By writing down your ideas/design on a blackboard(whiteboard) it allows you to collect your thoughts and flesh out what you plan to do. The book recommends that you don't start coding before you have have tried explaining your ideas to someone (maybe a rubber ducky).
 
@@ -22,22 +22,22 @@ These questions include:
 **Customer**: Who you want to make happy :grin:
 
 **Design**: Another stage of program development. This stage is interested in the following questions:
-> How do we solve the problem?
-> What should be the overall structure of the system?
-> Which parts does it consist of?
-> How do those parts communicate with each other?
-> How does the system communicate with its users?
++ How do we solve the problem?
++ What should be the overall structure of the system?
++ Which parts does it consist of?
++ How do those parts communicate with each other?
++ How does the system communicate with its users?
 
 **Feedback**: As mentioned above in "Blackboard," it's important to receive feedback when designing your program.
 
 **GUI**: Graphical user interface. I guess this is anything that isn't strictly command line?
 
 **Ideals**: 
-> _correctness_
-> _reliability_
-> _well designed_
-> _affordable_
-> _maintainable_
++ _correctness_
++ _reliability_
++ _well designed_
++ _affordable_
++ _maintainable_
 
 **Implementation**: A combination of the programming and testing stages of program development.
 
