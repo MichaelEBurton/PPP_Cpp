@@ -31,6 +31,6 @@ g++ file.cpp -o file.exe
 // In order to use the standard library facilities header you must include the following line in your header
 
 
-#include "../../../std_lib_facilities.h" \\ path to file
+#include "../../../std_lib_facilities.h" // path to file
 
 ```
