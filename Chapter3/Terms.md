@@ -26,7 +26,7 @@
 
 **operator**: Used to specify how to change a variable (based off your operation of choice)
 
-**type**: Defines a set of possible of possible values and a set of operations 
+**type**: Defines a set of possible values and a set of operations 
 
 **type safety**: Extent to which a programming language discovers or prevents type errors.
 
