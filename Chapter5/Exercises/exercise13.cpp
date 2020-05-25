@@ -35,9 +35,7 @@ try{
     bulls_and_cows.push_back(randint(10));
     bulls_and_cows.push_back(randint(10));
     bulls_and_cows.push_back(randint(10));
-    for(int x:bulls_and_cows){
-        cout<<x;
-    }
+    
     char p = 'y';
     while(p == 'y'){
         vector<int> guesses;
