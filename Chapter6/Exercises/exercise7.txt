@@ -1,0 +1,18 @@
+Grammar 
+
+-----------------------------------------
+
+Expression:
+    term
+    expression '|' term
+
+Term:
+    primary
+    term '^' primary
+
+Primary:
+    number
+    primary '&' number
+    '(' expression ')'
+
+
