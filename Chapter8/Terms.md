@@ -1,63 +1,63 @@
-**activation record**
+**activation record**: An activation record is is a data structure containing a copy of a functions parameters and local variables.
 
-**argument**
+**argument**: Something that is passed to a function.
 
-**argument passing**
+**argument passing**: How an argument is passed to a function. There are three types.
 
-**call stack**
+**call stack**: A stack of activation records.
 
-**class scope**
+**class scope**: When a variables scope is within a class. It can be used anywhere within that class.
 
-**const**
+**const**: Constant keyword.
 
-**const expr**
+**constexpr**: Constant that does not need to be intialized when compiled.
 
-**declaration**
+**declaration**: statement that introduces a name into a scope.
 
-**definition**
+**definition**: a declaration that fully specifies the entity declared.
 
-**extern**
+**extern**: Keyword that indicates a variable declaration is not a defintion.
 
-**forward declaration**
+**forward declaration**: When a function is declared before it is defined.
 
-**function**
+**function**: The way we represent actions and computations.
 
-**function defintion**
+**function defintion**: The full specification of an entity.
 
-**global scope**
+**global scope**: the area of text outside any other scope.
 
-**header file**
+**header file**: A file that is typically used for managing declarations.
 
-**initializer**
+**initializer**: How we intialize variables.
 
-**local scope**
+**local scope**: scope between {...} braces of a block or in a function argument list.
 
-**namespace**
+**namespace**: allows the user to organize classes, functions, data, and types into an identifiable and named part of a program without defining a type.
 
-**namespace scope**
+**namespace scope**: named scope nested in the global or in another namespace.
 
-**nested block**
+**nested block**: block nested in another block.
 
-**parameter**
+**parameter**: 
 
-**pass-by-const-reference**
+**pass-by-const-reference**: A reference that cannot be changed.
 
-**pass-by-reference**
+**pass-by-reference**: referencing a variable in a function.
 
-**pass-by-value**
+**pass-by-value**: Passing a value to a function.
 
-**recursion**
+**recursion**: A function that calls itself.
 
-**return**
+**return**: A value that a function returns.
 
-**scope**
+**scope**: A region of program text.
 
-**statement scope**
+**statement scope**: Scope within a statement (e.g. for-statement).
 
-**technicalities**
+**technicalities**: Specifics of a programming language.
 
-**undeclared identifier**
+**undeclared identifier**: Error thrown when something is not declared in a program.
 
-**using declaration**
+**using declaration**: Shorthand way of referring to an object.
 
-**using directive**
+**using directive**: Stronger shorthand reference that uses the entire namespace.
