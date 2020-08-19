@@ -2,6 +2,7 @@
 
 namespace Library_sys {
 
+
 // Genre definitions ---------------------------------------------------------
 
 ostream& operator<<(ostream& os, Genre g)

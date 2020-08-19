@@ -1,3 +1,12 @@
+/*==============================================================*\
+| Author: Michael B.                                            |
+| Date: 8/19/20                                                 |
+| Purpose: This program is used to test the implementation of   |
+|            a library class that involves the use of the book, |
+|            patron and chrono class. Currently the program is  |
+|            not compiling due to some "undefinded reference";  |
+|            probably a header issue?                           |
+\*==============================================================*/
 #include "library.h"
 
 using namespace std;
@@ -10,8 +19,6 @@ try {
     Book bhot("2-1-5-b", "A brief history of time", "Stephen Hawkings", "Jan 1, 1988", true, Genre::nonfiction);
 
     cout<<gatsby;
-
-    Book gatsby2 = gatsby;
 
     Library lib;
 
@@ -33,6 +40,7 @@ try {
     lib.checkout_book(Michael, mice_n_men, Chrono::Date{20,Chrono::Month::aug,18});
 
     cout<<mice_n_men;
+
     return 0;
 }
 catch(exception& e)

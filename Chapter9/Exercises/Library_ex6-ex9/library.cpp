@@ -12,7 +12,7 @@ bool Library::is_patron(Patron& p)
 
 bool Library::book_exists(Book& b)
 {
-    for(Book i:Books)
+    for(Book i:books)
         if(i.isbn() == b.isbn())
             return true;
     return false;
