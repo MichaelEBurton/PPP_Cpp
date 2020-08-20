@@ -1,11 +1,11 @@
 #include "book.h"
+#include "../../../../std_lib_facilities.h"
 
 namespace Library_sys {
 
-
 // Genre definitions ---------------------------------------------------------
 
-ostream& operator<<(ostream& os, Genre g)
+ostream& operator<<(ostream& os, Book::Genre g)
 {
     vector<string> genre_tbl = 
     { 
@@ -16,6 +16,9 @@ ostream& operator<<(ostream& os, Genre g)
 }
 
 // Book Definitions -----------------------------------------------------------
+Book::Book()
+{
+}
 
 Book::Book(string ii, string tt, string aa, string cop, bool che, Genre gg)
     :i{ii}, t{tt}, a{aa}, co{cop}, ch{che}, g{gg}
@@ -26,24 +29,18 @@ Book::Book(string ii, string tt, string aa, string cop, bool che, Genre gg)
     if(!isdigit(ii[0]) || !isdigit(ii[2]) || !isdigit(ii[4]) || isdigit(ii[6])) error("invalid ISBN: example of valid form 1-2-3-a");
 }
 
-string Book::status() const
-{
-    if(ch == true) return"Checked out";
-    return "Available";
-}
-
 void Book::checkin()
 {
-    if(ch == false) error("book already checked in!");
+    if(ch) error("book already checked in!");
 
-    ch = false;
+    ch = true;
 }
 
 void Book::checkout()
 {
-    if(ch == true) error("book already checked out!");
+    if(!ch) error("book already checked out!");
 
-    ch = true;
+    ch = false;
 }
 
 bool operator==(const Book& a, const Book& b)
@@ -58,12 +55,19 @@ bool operator!=(const Book& a, const Book& b)
 
 ostream& operator<<(ostream& os, const Book& b)
 {
+    string s;
+
+    if(b.available())
+        s = "available";
+    else 
+        s = "unavailable";
+
     return os<<"isbn: "<<b.isbn()<<'\n'
              <<"Title: "<<b.title()<<'\n'
              <<"Author: "<<b.author()<<'\n'
              <<"Genre: "<<b.genre()<<'\n'
-             <<"Status: "<<b.status()<<'\n';
-    
+             <<"Status: "<<s<<'\n';    
 }
 
 }
+

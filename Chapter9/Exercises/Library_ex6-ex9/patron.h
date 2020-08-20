@@ -1,21 +1,23 @@
-#include "../../../../std_lib_facilities.h"
+
+#include <string>
 
 namespace Library_sys {
 
 class Patron {
 public:
 
-    Patron(string n, int c, double f);
+    Patron(std::string n, int c, double f);
     Patron();
 
-    string name() const {return n;}
+    std::string name() const {return n;}
     int card_number() const {return c;}
     double fees() const {return f;}
 
     void set_fees(double d);
-    bool owes_fees(Patron& p);
+    bool owes_fees() const {return f > 0.0;}
+
 private:
-    string n;
+    std::string n;
     int c;
     double f;
 };

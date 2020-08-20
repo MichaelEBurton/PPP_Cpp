@@ -14,23 +14,40 @@ Although I have programmed in Java, Python, R, and SAS before, my programming ha
 + For compiling C++ on my windows machine I have chosen the MINGW compiler
 + For compiling C++ on my linux machine I have yet to choose a compiler
 
+### How to compile on windows
+```
+g++ file.cpp -o file.exe
+```
+
+### How to execute file in git bash
 
 ```
-# How to compile on windows
-
-g++ file.cpp -o file.exe
-
-# How to execute file in git bash
-
 ./file.exe
 ```
 
+### Commenting in C++
 ```
-// This is how you comment in C++
+// Single line comment
 
-// In order to use the standard library facilities header you must include the following line in your header
+/*  This
+      is
+       a
+       multiline
+       comment
+*/
+```
 
-
+### How to load the standard library facilities
+```
 #include "../../../std_lib_facilities.h"; // path to file
+```
+
+### How to compile a file which relies on multiple classes in multiple files
+```
+#Example from Chapter 9 exercise (Library class)
+
+g++ main.cpp library.cpp book.cpp patron.cpp ../../Code/Chrono.cpp -o main.exe
+
+# not: g++ main.cpp -o main.exe
 
 ```

@@ -6,19 +6,24 @@
 |            patron and chrono class. Currently the program is  |
 |            not compiling due to some "undefinded reference";  |
 |            probably a header issue?                           |
+| Edit: Figured out how to resolve undefined references.        |
 \*==============================================================*/
+
 #include "library.h"
+#include <iostream>
+#include <vector>
 
 using namespace std;
 using namespace Library_sys;
 
 int main()
 try {
-    Book gatsby("1-2-3-a", "The Great Gatsby", "F. Scott Fitzgerald", "Jan 1, 1925", false, Genre::fiction);
-    Book mice_n_men("1-2-4-a", "Of Mice and Men", "John Steinbeck", "Jan 1, 1937", false, Genre::fiction);
-    Book bhot("2-1-5-b", "A brief history of time", "Stephen Hawkings", "Jan 1, 1988", true, Genre::nonfiction);
 
-    cout<<gatsby;
+    Book gatsby("1-2-3-a", "The Great Gatsby", "F. Scott Fitzgerald", "Jan 1, 1925", true, Book::Genre::fiction);
+    Book mice_n_men("1-2-4-a", "Of Mice and Men", "John Steinbeck", "Jan 1, 1937", false, Book::Genre::fiction);
+    Book bhot("2-1-5-b", "A brief history of time", "Stephen Hawkings", "Jan 1, 1988", true, Book::Genre::nonfiction);
+
+    cout<<gatsby<<'\n';
 
     Library lib;
 
@@ -33,13 +38,18 @@ try {
     lib.add_Patron(Michael);
     lib.add_Patron(Sophie);
     lib.add_Patron(Carl);
+    
+    gatsby.checkin();
+
+    cout<<gatsby<<'\n';
 
     gatsby.checkout();
 
+    Chrono::Date today(20, Chrono::Month::aug,18);
     
-    lib.checkout_book(Michael, mice_n_men, Chrono::Date{20,Chrono::Month::aug,18});
+    lib.checkout_book(Michael, mice_n_men, today);
 
-    cout<<mice_n_men;
+    cout<<mice_n_men<<'\n';
 
     return 0;
 }

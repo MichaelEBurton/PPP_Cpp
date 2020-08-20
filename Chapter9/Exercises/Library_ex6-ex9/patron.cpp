@@ -3,7 +3,7 @@
 namespace Library_sys {
 
 // ---------------------------------------------------------------------------
-Patron::Patron(string nn, int cc, double ff)
+Patron::Patron(std::string nn, int cc, double ff)
     :n{nn}, c{cc}, f{ff}
 {
 }
@@ -11,12 +11,6 @@ Patron::Patron(string nn, int cc, double ff)
 void Patron::set_fees(double d)
 {
     f = d;
-}
-
-bool Patron::owes_fees(Patron& p)
-{
-    if(p.fees() > 0.0) return true;
-    return false;
 }
 
 }
