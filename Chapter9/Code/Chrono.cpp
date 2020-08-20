@@ -17,7 +17,7 @@ const Date& default_date()
     return dd;
 }
 
-Date::Date()()
+Date::Date()
     :y{default_date().year()},
      m{default_date().month()},
      d{default_date().day()}
@@ -70,12 +70,15 @@ bool is_date(int y, Month m, int d)
 bool leapyear(int y)
 {
     // see exercise 10
+    if(y % 4) return false;
+    if(y % 100 == 0 && y % 400 == 0) return false;
+    return true;
 }
 
 bool operator==(const Date& a, const Date& b)
 {
     return a.year() == b.year()
-        && a.month == b.month()
+        && a.month() == b.month()
         && a.day() == b.day();
 }
 
@@ -98,7 +101,7 @@ istream& operator>>(istream& is, Date& dd)
     is>>ch1>>y>>ch2>>m>>ch3>>d>>ch4;
     if(!is) return is;
     if(ch1!='(' || ch2 !=',' || ch3!=',' || ch4!=')'){  // oops: format error
-        is.clear(ios_base::failbit);                    // set the fail bit
+        is.clear(std::ios_base::failbit);                    // set the fail bit
     return is;
     }
 
@@ -110,7 +113,7 @@ istream& operator>>(istream& is, Date& dd)
 enum class Day {
     sunday, monday, tuesday, wednesday, thursday, friday, saturday
 };
-
+/*
 Day day_of_week(const Date& d)
 {
     // ...
@@ -124,5 +127,5 @@ Date next_Sunday(const Date& d)
 Date next_weekday(const Date& d)
 {
     // ...
-}
+}*/
 } // Chrono
