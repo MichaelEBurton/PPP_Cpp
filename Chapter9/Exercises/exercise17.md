@@ -1,0 +1,1 @@
+Rational would be better to use when we need high precision in the calculations we are making; whereas with Money we lose precision in rounding.
