@@ -1,43 +1,43 @@
-**bad()**:
+**bad()**: The stream state that indicates something unexpected and serious happened.
 
-**buffer**:
+**buffer**: A data structure used to store data while your I/O stream communicates with your operating system.
 
-**clear()**:
+**clear()**: Used to set the stream state; often just back to good().
 
-**close()**:
+**close()**: Method for closing an I/O stream.
 
-**device driver**:
+**device driver**: A set of instructions telling your program how to interact with certain input and output devices.
 
-**eof()**:
+**eof()**: The stream state indicating you have reached the end of input.
 
-**fail()**:
+**fail()**: The stream state indicating that something unexpected happened.
 
-**file**:
+**file**: A sequence of bytes numbered from 0 upward.
 
-**good()**:
+**good()**: The stream state indicating that operations succeeded.
 
-**ifstream**:
+**ifstream**: An istream for reading from a file.
 
-**input device**:
+**input device**: Where your program is reading data from.
 
-**input operator**:
+**input operator**: >>
 
-**iostream**:
+**iostream**: A library that could be covered in more than a full class! It contains numerous facilities.
 
-**ofstream**:
+**ofstream**: An ostream for writing to a file.
 
-**open()**:
+**open()**: Method used for opening an I/O stream.
 
-**ostream**:
+**ostream**: Type that deals with streams of outputs.
 
-**output device**:
+**output device**: Where your program writes its data.
 
-**output operator**:
+**output operator**:<<
 
-**stream state**:
+**stream state**: Four possible cases for input error.
 
-**structured file**:
+**structured file**: A file that has a predictable and consistent pattern in how the data is stored (e.g. the temperature reading dataset).
 
-**terminator**:
+**terminator**: A character indicating input should not be read anymore.
 
-**unget()**:
+**unget()**: Put the current input back in the stream.
