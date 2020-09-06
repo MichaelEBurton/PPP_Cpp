@@ -1,0 +1,5 @@
+"THE FUTURE MAY BE UNC3RTAIN But aT lea$t we have each Other!"HI
+Does this program work with multiple- lines?
+Woah check it out a line of -text.
+This is just sample input for our program to use.
+- don't use the as-if rule.
