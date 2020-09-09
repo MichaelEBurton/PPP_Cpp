@@ -53,4 +53,5 @@ g++ main.cpp library.cpp book.cpp patron.cpp ../../Code/Chrono.cpp -o main.exe
 ```
 
 ### FLTK
-This has probably been the most difficult part of teaching myself C++ using PPP; however, I found a great [tutorial](https://www.youtube.com/watch?v=6sNKtyl4hQM&t=909s) by Kenneth Burchfiel. Although this tutorial is very thorough I did find that the file fltk_jpegd.lib was not in by build library, so I simply excluded this library from the additional dependencies section.
+This has probably been the most difficult part of teaching myself C++ using PPP; however, I found a great [tutorial](https://www.youtube.com/watch?v=6sNKtyl4hQM&t=909s) by Kenneth Burchfiel. 
+Although this tutorial is very thorough I did find that the file fltk_jpegd.lib was not in my build library. To overcome this I simply rebuilt the solution using the fltk.sln file in the ide/VisualC2010 directory and copied the libraries from there.
