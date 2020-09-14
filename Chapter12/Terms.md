@@ -1,29 +1,29 @@
-**color**:
+**color**: Color.
 
-**coordinates**:
+**coordinates**: System of locating a point on a screen.
 
-**display**:
+**display**: Typically our computer screen.
 
-**fil color**:
+**fill color**: The color we wish to use for within the borders of a shape.
 
-**FLTK**:
+**FLTK**: Fast light Toolkit ("full-tick"); our GUI library.
 
-**graphics**:
+**graphics**: Visual interfaces, representations of data.
 
-**GUI**:
+**GUI**: Graphical user interface.
 
-**GUI Library**:
+**GUI Library**: A library that tells a program how to interact with a computer's operating system.
 
-**HTML**:
+**HTML**: Hypertext markup language; commonly used in website design.
 
-**image**:
+**image**: A picture that is display on a computer.
 
-**JPEG**:
+**JPEG**: Picture format.
+ 
+**line style**: How we distinguish between different lines. (Dashed, dotted, solid)
 
-**line style**:
+**software layer**: 
 
-**software layer**:
+**window**: Rectangle of pixels on our display we used for displaying our graphics.
 
-**window**:
-
-**XML**:
+**XML**: Extensible markup language.
